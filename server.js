@@ -27,6 +27,7 @@ app.use(bodyParser.json());
 
 // ROUTES + CONTROLLERS
 
+app.get('/', (req, res) => { res.send('This is working !') });
 app.post('/signin', (req, res) => { signIn.controlSignIn(req, res, db, bcrypt) });
 app.post('/register', (req, res) => { register.controlRegister(req, res, db, bcrypt) });
 app.get('/profile/:id', (req, res) => { profile.controlProfileGet(req, res, db) });

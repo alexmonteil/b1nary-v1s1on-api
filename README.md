@@ -1,2 +1,2 @@
-# smart-brain-api
+# b1nary-v1s1on
 server for face recognition application

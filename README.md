@@ -1,2 +1,2 @@
-# b1nary-v1s1on-api
+# binary-vision-api
 server for face recognition application

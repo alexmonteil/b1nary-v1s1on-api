@@ -1,3 +1,4 @@
+// Controller for user profile display
 const controlProfileGet = (req, res, db) => {
     const { id } = req.params;
     db.select('*').from('users').where({ 

@@ -10,6 +10,7 @@ const profile = require('./controllers/profile');
 const entries = require('./controllers/entries');
 const image = require('./controllers/image');
 
+// DATABASE CONNECTION
 const db = knex({
     client: 'pg',
     connection: {
@@ -23,7 +24,7 @@ const db = knex({
 app.use(cors());
 app.use(bodyParser.json());
 
-// ROUTES + CONTROLLERS
+// ENDPOINTS + CONTROLLERS
 
 app.get('/', (req, res) => { res.send('This is working !') });
 app.post('/signin', (req, res) => { signIn.controlSignIn(req, res, db, bcrypt) });

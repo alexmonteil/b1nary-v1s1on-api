@@ -1,3 +1,4 @@
+// Controller for user registration
 const controlRegister = (req, res, db, bcrypt) => {
     const { email, password , name } = req.body;
     if (!email || !password || !name) {

@@ -1,3 +1,4 @@
+// Controller for user entry count update
 const controlEntries = (req, res, db) => {
     const { id } = req.body;
     db('users').where('id', '=', id)

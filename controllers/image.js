@@ -3,6 +3,7 @@ const app = new Clarifai.App({
     apiKey: process.env.API_KEY
 });
 
+// Controller for Clarifai API call
 const controlAPICall = (req, res) => {
     app.models
         .predict(Clarifai.FACE_DETECT_MODEL, req.body.input)

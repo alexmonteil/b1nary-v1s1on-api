@@ -1,2 +1,2 @@
 # binary-vision-api
-server for face recognition application
+server for facial recognition application
